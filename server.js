@@ -56,7 +56,15 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) =>{
   res.render('about.hbs', {
-    pageTitle: 'About Page',
+    pageTitle: 'About Page'
+  });
+});
+
+app.get('/project', (req, res) => {
+  res.render('project.hbs', {
+    htmlTitle: 'New Project',
+    pageTitle: 'This is my Project`s Page.',
+    pageText: 'Starting to build the new project here.'
   });
 });
 
@@ -65,6 +73,8 @@ app.get('/bad', (req, res) => {
     errorMessage: 'This is a bad request'
   });
 });
+
+
 
 
 
