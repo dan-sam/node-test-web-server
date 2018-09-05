@@ -74,9 +74,11 @@ app.get('/bad', (req, res) => {
   });
 });
 
-
-
-
+// git status
+// git add .
+// git commit -m "new commit message"
+// git push
+// git push heroku
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
